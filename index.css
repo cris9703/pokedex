@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace; 
+    transition: all ease 0.9s;   
+}
+body{
+    height: 100vh;
+    background-image: url(./img/body_bg.png);
+}
+header{
+    background-color: #232323;
+    height: 80px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+}       
+h1{
+    color: #f0ebeb;
+    display: flex;
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif   ;
+}   
+span{
+    color: #f0ebeb;
+    
+}   
+.izq{
+    gap:20px;
+    display: flex;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}       
+.card-container{
+    margin-left: 140px;
+    margin-right: 140px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 33px;
+    
+
+}
+.card{
+    width: 304px;
+    height: 350.40px;
+    border:1px solid #f0ebeb;
+    border-radius: 10px;
+    opacity: 0.3;
+
+}
+.card:hover{
+    opacity: 1;
+}
+.card-top{
+    height: 60%;
+    background-color: #f6f7f8;
+    border-radius: 9px;
+    position: relative;
+    
+    
+    
+}
+.card:hover img{
+    width: 14pc;
+    top: -9px;
+    left: 13px;
+}
+
+.card:hover p{
+    font-size: 9pc;
+}
+.card-top img{
+    width: 13pc;
+    position: absolute;
+    top: 10px;
+    left: 16%;
+
+}
+p{
+   font-size: 120px;
+   margin-left:40px;
+   font-family:fantasy
+    
+     
+    
+    
+   
+} 
+img{
+    position: absolute;
+    margin-top: 3%;
+    
+}
+.nombre{
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.tipo{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 90px;
+    margin-left: 10px;
+
+}
+#E{
+    background-color: #eed535;
+}
+.habilidad{
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+#N{
+    background-color: #575757f6;
+}
+#A{
+    background-color: rgb(43, 8, 141);
+}
+
+#F{
+    background-color: rgb(226, 91, 12);
+}
+#FA{
+    background-color: #631072d8;
+}
+#B{
+    background-color: green;
+}
+#P{
+    background-color: rgb(97, 139, 33);
+}
+@media screen and (max-width:950px){
+    .card-container{
+        grid-template-columns: repeat(2,20 pc);
+    }
+}
+@media screen and (max-width: 850px){
+    .card-container{
+        grid-template-columns: repeat(2,20 pc);
+    }
+}
+
+
